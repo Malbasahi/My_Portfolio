@@ -455,7 +455,7 @@ section {
 /* CSS for smaller devices */
 @media only screen and (max-width: 600px) {
     .about-content span {
-        font-size: 0.8em; /* Adjust the font size as needed */
+        font-size: 0.5em; /* Adjust the font size as needed */
     }
 }
 
