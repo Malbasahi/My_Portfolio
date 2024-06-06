@@ -453,9 +453,9 @@ section {
     50% { opacity: 0; }
 }
 /* For small devices */
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 414px) {
   .about-content h3 {
-    font-size: 14px; /* Adjust as needed */
+    font-size: 12px; /* Adjust as needed */
   }
 }
 
