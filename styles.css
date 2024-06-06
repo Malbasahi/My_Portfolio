@@ -453,16 +453,16 @@ section {
     50% { opacity: 0; }
 }
 /* For small devices */
-@media screen and (max-width: 414px) {
+@media screen and (min-width: 414px) {
   .about-content h3 {
-    font-size: 12px; /* Adjust as needed */
+    font-size: 0.75em; /* Adjust as needed */
   }
 }
 
 /* For larger devices */
-@media screen and (min-width: 577px) {
+@media screen and (max-width: 577px) {
   .about-content h3 {
-    font-size: 16px; /* Default font size */
+    font-size: 1em; /* Default font size */
   }
 }
 
