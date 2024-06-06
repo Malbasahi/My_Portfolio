@@ -452,6 +452,12 @@ section {
 @keyframes blink-caret {
     50% { opacity: 0; }
 }
+/* CSS for smaller devices */
+@media only screen and (max-width: 600px) {
+    .about-content span {
+        font-size: 0.8em; /* Adjust the font size as needed */
+    }
+}
 
 .about-content p {
     font-size: 1.1em;
