@@ -414,12 +414,10 @@ section {
     animation: slideInFromLeft 1s ease-in-out;
 }
 
-@keyframes slideInFromLeft {
-    from {
-        transform: translateX(-100%);
-    }
-    to {
-        transform: translateX(0);
+/* Adjust font size for smaller devices */
+@media (max-width: 768px) {
+    .about-content h2 {
+        font-size: 1.8em; /* Adjusted font size */
     }
 }
 
@@ -429,12 +427,10 @@ section {
     animation: slideInFromRight 1s ease-in-out;
 }
 
-@keyframes slideInFromRight {
-    from {
-        transform: translateX(100%);
-    }
-    to {
-        transform: translateX(0);
+/* Adjust font size for smaller devices */
+@media (max-width: 768px) {
+    .about-content h3 {
+        font-size: 1.5em; /* Adjusted font size */
     }
 }
 
@@ -445,25 +441,15 @@ section {
     color: transparent;
     font-family: Georgia, serif;
 }
+
 #cursor {
     animation: blink-caret 0.75s infinite;
 }
 
 @keyframes blink-caret {
-    50% { opacity: 0; }
-}
-/* For small devices */
-@media screen and (min-width: 414px) {
-  .about-content h3 {
-    font-size: 0.75em; /* Adjust as needed */
-  }
-}
-
-/* For larger devices */
-@media screen and (max-width: 577px) {
-  .about-content h3 {
-    font-size: 1em; /* Default font size */
-  }
+    50% {
+        opacity: 0;
+    }
 }
 
 .about-content p {
@@ -471,6 +457,13 @@ section {
     line-height: 1.6;
     margin-bottom: 20px;
     animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Adjust font size for smaller devices */
+@media (max-width: 768px) {
+    .about-content p {
+        font-size: 1em; /* Adjusted font size */
+    }
 }
 
 .resume-button {
@@ -559,10 +552,11 @@ section {
     }
 }
 
-.dark-mode .resume-button a{
+.dark-mode .resume-button a {
     color: #fff;
-    background-color: #000000
+    background-color: #000000;
 }
+
 .animated-video {
     width: 50px; /* Adjust the width as needed */
     height: auto; /* Maintain aspect ratio */
