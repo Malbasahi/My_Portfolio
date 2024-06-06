@@ -1299,37 +1299,6 @@ footer {
     font-size: 0.9em;
 }
 
-/* Media queries for responsiveness */
-@media (max-width: 768px) {
-    .social-icons {
-        gap: 10px;
-    }
-
-    .social-icons a {
-        font-size: 1.2em;
-    }
-}
-
-@media (max-width: 480px) {
-    .social-icons {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .social-icons li {
-        margin: 5px 0;
-    }
-
-    .social-icons a {
-        font-size: 1em;
-    }
-
-    .copyright {
-        font-size: 0.8em;
-    }
-}
-
-
 /* Animation for fade-in effect */
 .section.fade-in {
     opacity: 1;
