@@ -1265,6 +1265,17 @@ svg path {
     display: none;
     margin-bottom: 40px;
 }
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    .contact-form {
+        max-width: 80%;
+    }
+
+    .contact-form button[type="submit"] {
+        width: 100%;
+        margin-left: 0;
+    }
+}
 
 /* Footer styles */
 footer {
