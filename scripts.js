@@ -13,19 +13,19 @@ document.getElementById('contact-form').addEventListener('submit', function(even
 });
 
 // JavaScript for smooth scrolling
-document.querySelectorAll('.nav-links a').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
+document.querySelector('.nav-links').addEventListener('click', function(e) {
+    if (e.target.tagName === 'A') {
         e.preventDefault();
-        const targetId = this.getAttribute('href').substring(1);
+        const targetId = e.target.getAttribute('href').substring(1);
         const targetElement = document.getElementById(targetId);
 
         window.scrollTo({
-            top: targetElement.offsetTop - 60, // Adjust for the navbar height
+            top: targetElement.offsetTop - 60,
             behavior: 'smooth'
         });
 
-        document.querySelector('.nav-links').classList.remove('active');
-    });
+        this.classList.remove('active');
+    }
 });
 
 // JavaScript for the menu icon (responsive menu)
