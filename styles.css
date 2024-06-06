@@ -422,15 +422,15 @@ section {
 }
 
 .about-content h3 {
-    font-size: 1.9em;
+    font-size: 1.7em;
     margin-bottom: 20px;
     animation: slideInFromRight 1s ease-in-out;
 }
 
 /* Adjust font size for smaller devices */
-@media (max-width: 768px) {
+@media (max-width: 414px) {
     .about-content h3 {
-        font-size: 1.5em; /* Adjusted font size */
+        font-size: 0.5em; /* Adjusted font size */
     }
 }
 
