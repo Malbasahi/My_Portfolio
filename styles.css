@@ -429,8 +429,8 @@ section {
 
 /* Adjust font size for smaller devices */
 @media (max-width: 414px) {
-    .about-content h3 {
-        font-size: 0.5em; /* Adjusted font size */
+    .about-content span {
+        font-size: 0.4em; /* Adjusted font size */
     }
 }
 
